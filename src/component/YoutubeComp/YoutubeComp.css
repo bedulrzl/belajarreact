@@ -1,0 +1,24 @@
+p {
+    margin: 0;;
+}
+
+.header {
+   width: 320px;
+   float: left;
+   margin: 10px;
+}
+.head-img {
+    position: relative;
+}
+
+.img-time {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
