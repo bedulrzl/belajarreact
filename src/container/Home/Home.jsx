@@ -1,6 +1,7 @@
 import React from 'react'
-import YoutubeComp from '../../component/YoutubeComp/YoutubeComp';
-import Product from '../product/Product';
+// import YoutubeComp from '../../component/YoutubeComp/YoutubeComp';
+// import Product from '../product/Product';
+import BlogPost from '../BlogPost/BlogPost';
 
 
 class Home extends React.Component {
@@ -13,9 +14,11 @@ class Home extends React.Component {
                 <YoutubeComp time='08:20'title='Dota wtf 204'/>
                 <YoutubeComp/> */}
 
-                <h1>Product</h1>
+                {/* <h1>Product</h1>
                 <hr/>
-                <Product/>
+                <Product/> */}
+
+                <BlogPost/>
             </div>
         )
     }
