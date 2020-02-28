@@ -1,9 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import HelloComponent from './component/HelloComponent';
-import StatefullComponent from './container/StatefullComponent';
 import * as serviceWorker from './serviceWorker';
 import Home from './container/Home/Home';
 

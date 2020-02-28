@@ -1,0 +1,14 @@
+.navigation {
+    padding: 30px;
+    color: greenyellow;
+    background: indianred;
+
+}
+.navigation a {
+    margin: 10px;
+    color: #fff;
+    background: maroon;
+    padding: 10px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+}

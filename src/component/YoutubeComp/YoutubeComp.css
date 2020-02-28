@@ -2,13 +2,16 @@ p {
     margin: 0;;
 }
 
-.header {
+.header-youtube {
    width: 320px;
    float: left;
    margin: 10px;
 }
 .head-img {
     position: relative;
+}
+.head-img img {
+    width: 100%;
 }
 
 .img-time {
