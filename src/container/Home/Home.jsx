@@ -1,5 +1,5 @@
 //libraries
-import React, { Fragment } from 'react'
+import React, { Fragment, createContext } from 'react'
 
 //pages
 import Product from '../pages/product/Product';
@@ -10,23 +10,29 @@ import DetailPost from '../pages/BlogPost/DetailPost/DetailPost';
 
 //styling
 import './Home.css'
+import GlobalProvider from '../../context/context';
+
+
 
 
 class Home extends React.Component {
+
+    
     render() {
         return ( 
             <Router>
-            <Fragment>
-                <div className="navigation">
-                    <Link to="/">Blog Post</Link>
-                    <Link to="/product">Product</Link>
-                    <Link to="/youtube">Youtube</Link>
-                </div>
-              <Route path="/" exact component={BlogPost} />
-              <Route path="/detail-post/:postID" component={DetailPost} />
-              <Route path="/product" component={Product} />
-              <Route path="/youtube" component={YoutubeCompPage} />
-            </Fragment>
+                
+                    <Fragment>
+                        <div className="navigation">
+                            <Link to="/">Blog Post</Link>
+                            <Link to="/product">Product</Link>
+                            <Link to="/youtube">Youtube</Link>
+                        </div>
+                    <Route path="/" exact component={BlogPost} />
+                    <Route path="/detail-post/:postID" component={DetailPost} />
+                    <Route path="/product" component={Product} />
+                    <Route path="/youtube" component={YoutubeCompPage} />
+                    </Fragment>
             </Router>
         )
     }
@@ -34,4 +40,4 @@ class Home extends React.Component {
 
 
 
-export default Home;
+export default GlobalProvider(Home);

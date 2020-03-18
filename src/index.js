@@ -3,7 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 import Home from './container/Home/Home';
+// import {createStore} from 'redux';
+// import {Provider} from 'react-redux';
+// import rootReducer from './redux/reducer/globalReducer';
 
+//store
+// const storeRedux = createStore(rootReducer)
+
+
+// ReactDOM.render(<Provider store={storeRedux}>
+//     <Home />
+// </Provider>, document.getElementById('root'));
 
 ReactDOM.render(<Home />, document.getElementById('root'));
 
